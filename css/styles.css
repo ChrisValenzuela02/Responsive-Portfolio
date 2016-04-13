@@ -1,0 +1,327 @@
+/********************/
+/********************/
+/* Global Styles */
+/********************/
+
+*{
+  box-sizing:border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/********************/
+/* General Styles */
+/********************/
+
+.to-caps{
+  text-transform:uppercase;  
+}
+
+.top-half,
+footer{
+  background-color: #f5f5f5;
+  padding: .5em 0 .5em 0;
+}
+
+.main-nav ul, li{
+  margin: 0 0 5px 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.name h1{
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.bottom-half a{
+  text-decoration:none;
+  color: #707070;
+  font-weight: bold;
+}
+
+.bottom-half a:hover{
+  color: #cdcdcd;
+}
+
+/********************/
+/* General Layout */
+/********************/
+
+.float-left{
+  display:inline;
+  width:45%;
+  float:left;
+}
+
+.float-right{
+  width:45%;
+  float:right;
+}
+
+.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+/********************/
+/* Media Queries */
+/********************/
+
+/********************/
+/* Mobile Layout */
+/********************/
+
+@media (max-width: 767px) {
+
+  .header{
+  text-align: center;
+  }
+
+  .header-content p{
+    line-height: 1.5em;
+  }
+
+  .main-nav{
+    float:left;
+    display:flex;
+    flex-direction:column;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .main-nav a {
+    margin: 0 20px;
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    text-decoration:none;
+    color: black;
+    font-weight:bold;
+    background-color:white;
+  }
+  
+  .main-nav a:hover{
+    color: #093a58;
+  }
+  
+  .main-nav ul, li{
+  display:block;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 10px;
+  }
+
+  .main-content {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom:1em;
+  }
+
+  .main-content p{
+    line-height: 1.5em;
+  }
+  
+  .image{
+    display:block;
+    margin: 0 auto;
+    width: 85%;
+  }
+  
+  .profile-image{
+    width: 75%;
+    display:block;
+    margin: 1.5em auto 1.5em;
+    padding-top:50px;
+    padding-bottom: 25px;
+  }
+  
+  .main-content p,
+  .header-content p{
+    margin-left:75px;
+    margin-right: 75px;
+    text-align:center;
+    padding-bottom: 20px;
+  }
+
+  .footer-nav{
+  display:none;
+  }
+
+ footer{
+    text-align:center;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+  }
+
+  h2{
+    margin: 2em 0 1.5em 0;
+    text-align: center;
+  }
+
+}
+
+/********************/
+/* Tablet Layout */
+/********************/
+
+@media (min-width: 768px){
+
+    .header{
+    text-align: center;
+  }
+  
+  .main-nav{
+    margin-bottom: 15px;
+  }
+  
+  .main-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+  }
+  
+  .top-half{
+    margin-bottom: 45px;
+  }
+  
+  .header-content p{
+    padding-left:15px;
+    width: 55%;
+    float:left;
+    line-height: 1.5em;
+  }
+  
+  .profile-image{
+    float:right;
+    width:30%;
+    margin: 20px 70px 35px 0;
+  }
+
+  .main-content{
+    text-align: center;
+  }   
+ 
+  #left{
+    text-align: center;
+    padding: 15px 0;
+    float: left;
+    max-width: 50%;
+  }
+
+  #middle,
+  #right{
+    text-align: center;
+    padding: 15px 0;
+    float: right;
+    max-width: 50%;
+  }
+  
+  .image{
+    width:100%;
+    padding: 5px 10px;
+  }
+
+  .description{
+    max-height: 38px;
+    max-width: 512px;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  .footer-nav{
+    margin-right:5%;
+    float:right;
+    }
+
+  .footer-nav li{
+    padding: 0 15px;
+    display: inline;     
+  }
+
+ footer{
+    text-align:center;
+    margin-top:5%;
+    padding: 50px 0 50px 0;
+    line-height: 1.5em;
+  }
+
+  #back-to-top{
+  display:none;
+  }
+  
+  h3{
+    text-align:center;
+  }
+    
+}
+
+/********************/
+/* Desktop Layout */
+/********************/
+
+@media (min-width: 1024px){
+
+  .header{
+    width: 100%;
+    display: block;
+  }
+
+  .header-content p{
+    line-height: 1.5em;
+  }
+
+  .name{
+    float: left;
+    width: 45%;
+  }
+
+  .main-nav{
+    padding-top: 30px;
+    float: right;
+    width: 45%;
+    
+  }
+
+  .main-content{
+    text-align: center;
+  }
+
+  .description{
+    max-height: 38px;
+    max-width: 512px;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  #left{
+    margin: 0;
+    padding: 10px;
+    float: left;
+    max-width: 33.33%;
+  }
+
+  #middle{
+    margin: 0;
+    padding: 10px;
+    float: left;
+    max-width: 33.33%;
+  }
+
+  #right{
+    margin: 0;
+    padding: 10px;
+    float: left;
+    max-width: 33.33%;
+  }
+
+  #back-to-top{
+    display: none;
+  }
+
+}
