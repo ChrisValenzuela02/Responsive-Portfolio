@@ -207,15 +207,15 @@ footer{
     text-align: center;
   }   
  
-  #left{
+  .left{
     text-align: center;
     padding: 15px 0;
     float: left;
     max-width: 50%;
   }
 
-  #middle,
-  #right{
+  .middle,
+  .right{
     text-align: center;
     padding: 15px 0;
     float: right;
@@ -299,29 +299,25 @@ footer{
     padding: 0 25px;
   }
 
-  #left{
+  .left{
     margin: 0;
     padding: 10px;
     float: left;
     max-width: 33.33%;
   }
 
-  #middle{
+  .middle{
     margin: 0;
     padding: 10px;
     float: left;
     max-width: 33.33%;
   }
 
-  #right{
+  .right{
     margin: 0;
     padding: 10px;
     float: left;
     max-width: 33.33%;
-  }
-
-  #back-to-top{
-    display: none;
   }
 
 }
